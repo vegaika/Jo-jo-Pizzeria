@@ -1,0 +1,567 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Open Sans", sans-serif;
+}
+
+body {
+    background-image: url(/img/background.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    overflow-x: hidden;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+.nav {
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+}
+
+.nav-list {
+    display: flex;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+li {
+    list-style: none;
+    margin-right: 40px;
+    margin-left: 20px;
+}
+
+.nav-item > a {
+    text-decoration: none;
+    color: #fff;
+    transition: 0.3s ease;
+}
+
+.nav-item > a:hover {
+    color: gray;
+    transition: 0.4s ease;
+}
+
+.delivery {
+    font-size: 18px;
+    margin-left: 200px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.time-png {
+    position: relative;
+    left: 190px;
+    top: -10px;
+}
+
+.phone-img {
+    position: relative;
+    left: 60px;
+    top: -12px;
+}
+
+.col-gray {
+    color: #A5A5A5;
+}
+
+.call {
+    font-size: 18px;
+    margin-left: 70px;
+    color: #fff;
+    font-weight: 500;
+}
+
+.red-color {
+    color: rgb(175, 18, 18);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.nav-item a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    background-color: #007BFF;
+    transform: scaleX(0);
+    transition: transform 0.3s ease;
+}
+
+.nav-item a:hover::after {
+    transform: scaleX(1);
+}
+
+.nav-item a:hover {
+    color: #A5A5A5;
+}
+.nav-item a {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding: 5px;
+    transition: color 0.3s;
+}
+
+.pizza-title, title {
+    margin-left: 200px;
+    max-width: 700px;
+    color: #fff;
+    font-size: 45px;
+    font-weight: 500;
+}
+
+.text {
+    margin-top: 20px;
+    color: #A5A5A5;
+    font-size: 16px;
+    max-width: 450px;
+}
+
+.pizza-buttons {
+    margin-left: 200px;
+    margin-top: 70px;
+}
+
+.pizza-btn {
+    border: 1px solid red;
+    margin-right: 19px;
+    border-radius: 50px;
+    font-size: 17px;
+    background-color: red;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 30px 70px;
+    box-shadow: 0 10px 50px black;
+    transition: 0.3s ease;
+}
+.pizza-btn:hover {
+    background-color: transparent;
+    transition: 0.3s ease;
+    border: 1px solid #fff;
+}
+.promo-btn {
+    border: 1px solid #fff;
+    border-radius: 50px;
+    font-size: 17px;
+    background-color: transparent;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 30px 70px;
+    box-shadow: 0 10px 30px black;
+    transition: 0.3s ease;
+}
+.promo-btn:hover {
+    background-color: red;
+    transition: 0.3s ease;
+    border: 1px solid #fff;
+}
+
+.chessePizza {
+    margin-top: 35px;
+    color: #fff;
+}
+
+.bg-white {
+    background-color: #fff;
+}
+
+.tab {
+    margin-top: 400px;
+}
+
+.heading {
+    display: flex;
+}
+
+.heading h1 {
+    font-size: 40px;
+}
+
+.menu-list {
+    display: flex;
+}
+.menu-list li a {
+    margin-top: 50px;
+    display: flex;
+    list-style: none;
+    text-decoration: none;
+    color: black;
+    border: 2px solid black;
+    border-radius: 30px;
+    padding: 12px 25px;
+    margin-left: -20px;
+    margin-right: -30px;
+    width: auto;
+    justify-content: center;
+    transition: 0.3s ease;
+    font-weight: 500;
+}
+.menu-list a:hover {
+    background-color: orange;
+    color: white;
+    transition: 0.3s ease;
+}
+
+.mainPart {
+    padding-top: 60px;
+    padding-left: 150px;
+}
+
+.container-cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+.cards {
+    margin-top: 70px;
+    margin-bottom: 90px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 10px;
+}
+.card-descrp {
+    margin-top: 5px;
+    color: #A5A5A5;
+    line-height: 1.7;
+}
+.card-price {
+    font-weight: 600;
+    margin-top: 10px;
+}
+.basket-btn {
+    margin-top: 20px;
+    border: none;
+    margin-right: 19px;
+    border-radius: 50px;
+    font-size: 14px;
+    background-color: red;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 17px 60px;
+    transition: 0.3s ease;
+}
+.basket-btn:hover {
+    background-color: orange;
+    transition: 0.3s ease;
+}
+
+.svg-item {
+    padding-right: 20px;
+}
+.grid-container {
+    background-image: url(/img/pizza-cover.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 700px;
+}
+.grid-title {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    padding: 30px;
+    padding-left: 220px;
+    padding-top: 70px;
+    line-height: 0.8;
+}
+.grid-title > h1 {
+    font-weight: 900;
+    font-size: 60px;
+}
+.grid-title > h1 > span {
+    font-weight: 400;
+    font-size: 40px;
+}
+.grid-blocks {
+    display: grid;
+    grid-template-columns: repeat(2, 550px);
+    grid-template-rows: 6em;
+    color: #fff;
+    align-items: center;
+    padding-left: 200px;
+    font-size: 25px;
+    font-weight: 600;
+}
+.grid-block {
+    margin-top: 20px;
+}
+.grid-block > span {
+    color: #f3cc94;
+    font-weight: 500;
+    font-size: 17px;
+}
+
+.container {
+    background-color: #fff;
+    padding-bottom: 70px;
+}
+.about-us__title > h1 {
+    color: black;
+    font-size: 42px;
+    font-weight: 700;
+    padding-top: 150px;
+    padding-left: 120px;
+}
+.about-us__text {
+    line-height: 1.8;
+    padding-left: 120px;
+    padding-top: 30px;
+}
+.image-restoran {
+    margin-left: 700px;
+    margin-top: -290px;
+    max-width: 100%;
+    border-radius: 25px;
+    filter: brightness(80%);
+}
+
+.delivery-container {
+    background-image: url(/img/fire.jpg);
+    color: #fff;
+    font-size: 31px;
+    padding-left: 150px;
+    padding-top: 110px;
+    padding-bottom: 70px;
+    line-height: 1;
+}
+.delivery-title > h1{
+    font-size: 46px;
+    margin-bottom: 20px;
+    line-height: 1.7;
+}
+.delivery-title > h1 > span{
+    font-size: 40px;
+    font-weight: 500;
+}
+.delivery-text{
+    font-size: 17px;
+    font-weight: 500;
+    color: #A5A5A5;
+}
+.del-btn {
+    border: 1px solid red;
+    margin-right: 19px;
+    margin-top: 70px;
+    border: 1px solid red;
+    border-radius: 50px;
+    font-size: 17px;
+    background-color: red;
+    color: #fff;
+    font-weight: 500;
+    cursor: pointer;
+    padding: 30px 120px;
+    box-shadow: 0 20px 100px rgb(188, 57, 57);
+    transition: 0.3s ease;
+}
+.del-btn:hover {
+    background-color: transparent;
+    transition: 0.3s ease;
+    border: 1px solid #fff;
+}
+.del-img {
+    border-radius: 50%;
+    margin-left: 900px;
+    margin-top: -350px;
+    max-width: 100%;
+}
+
+.footer-container {
+    background-color: #fff;
+    padding-top: 50px;
+    padding-bottom: 100px;
+}
+.map {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.contacts {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 10px 50px black;
+    padding: 15px 70px 51px 40px;
+}
+.contacts > h1 {
+    font-size: 35px;
+    line-height: 1;
+}
+.contacts > h1 > span {
+    font-size: 16px;
+}
+.contacts-item {
+    margin-top: 40px;
+}
+.footer {
+    display: flex;
+    margin-top: 100px;
+    bottom: 0;
+    height: 40px;
+}
+.footer-nav {
+    display: flex;
+    margin-left: 80px;
+    align-items: center;
+}
+.footer-list {
+    display: flex;
+    margin-left: 40px;
+    font-size: 18px;
+    font-weight: 500;
+    position: relative;
+    left: 300px;
+}
+li {
+    list-style: none;
+}
+.footer-item > a {
+    text-decoration: none;
+    color: black;
+    font-weight: 700;
+    transition: 0.1s ease;
+}
+.footer-item > a:hover {
+    color: gray;
+    transition: 0.1s ease;
+}
+.privacy-policy {
+    margin-left: 200px;
+    color: black;
+}
+
+/* Медиазапросы для маленьких экранов */
+@media (max-width: 768px) {
+    .nav {
+        flex-direction: column;
+        margin-left: 0;
+    }
+    .nav-list {
+        margin-left: 0;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+    li {
+        margin: 8px;
+    }
+    .delivery {
+        margin-left: 0;
+        margin-top: 20px;
+        text-align: center;
+    }
+    .call {
+        margin-left: 0;
+        margin-top: 10px;
+        text-align: center;
+    }
+    .pizza-title, .title {
+        margin-left: 0;
+        max-width: 90%;
+        font-size: 35px;
+        text-align: center;
+    }
+    .text {
+        max-width: 80%;
+        font-size: 14px;
+        margin-left: auto;
+        margin-right: auto;
+        text-align: center;
+    }
+    .pizza-buttons {
+        margin-left: 0;
+        text-align: center;
+        margin-top: 30px;
+    }
+    .pizza-btn, .promo-btn {
+        padding: 15px 30px;
+        font-size: 14px;
+    }
+    .mainPart {
+        padding: 10px;
+    }
+    .grid-title {
+        padding: 20px;
+        padding-left: 10px;
+        padding-top: 30px;
+        line-height: 1;
+    }
+    .grid-title h1 {
+        font-size: 30px;
+    }
+    .grid-title h1 span {
+        font-size: 25px;
+    }
+    .grid-blocks {
+        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        padding-left: 10px;
+        font-size: 18px;
+    }
+    .grid-block {
+        margin-top: 10px;
+    }
+    .about-us__title h1 {
+        padding: 20px;
+        font-size: 30px;
+        text-align: center;
+    }
+    .about-us__text {
+        padding: 20px;
+        text-align: justify;
+    }
+    .image-restoran {
+        margin: 10px auto;
+        display: block;
+    }
+    .delivery-container {
+        padding: 20px;
+        font-size: 20px;
+    }
+    .delivery-title h1 {
+        font-size: 30px;
+        margin-bottom: 10px;
+    }
+    .delivery-title h1 span {
+        font-size: 25px;
+    }
+    .delivery-text {
+        font-size: 14px;
+    }
+    .del-btn {
+        padding: 15px 50px;
+        margin-top: 30px;
+    }
+    .del-img {
+        margin: 20px auto;
+        display: block;
+    }
+    .map, .contacts {
+        padding: 10px;
+    }
+    .contacts > h1 {
+        font-size: 25px;
+    }
+    .contacts > h1 span {
+        font-size: 12px;
+    }
+    .contacts-item {
+        margin-top: 20px;
+    }
+    .menu-item {
+        font-size: 10px;
+        margin-right: 40px;
+        
+    }
+}
